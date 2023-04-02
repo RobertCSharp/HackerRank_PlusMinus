@@ -7,15 +7,6 @@ namespace HackerRank_PlusMinus
     {
         static void Main(string[] args)
         {
-            /* STDIN           Function
-  -----           --------
-              6               arr[] size n = 6
-              -4 3 -9 0 4 1   arr = [-4, 3, -9, 0, 4, 1] */
-
-
-            /*  0.500000
-                0.333333
-                0.166667 */
             plusMinus(new List<int>(){-4, 3, -9, 0, 4, 1});
         }
 
@@ -39,13 +30,11 @@ namespace HackerRank_PlusMinus
                 {
                     counterZero++;
                 }
-
             }
 
             Console.WriteLine((counterPozitive / arr.Count).ToString("0.00000") );
             Console.WriteLine((counterNegative / arr.Count).ToString("0.00000"));
             Console.WriteLine((counterZero / arr.Count).ToString("0.00000"));
-
         }
     }
 }
